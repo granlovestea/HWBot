@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.granby.hwbot'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+dependencies {
+    implementation 'junit:junit:4.12'
+
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+    implementation 'com.github.pengrad:java-telegram-bot-api:5.2.0'
+
+    implementation "io.reactivex.rxjava3:rxjava:3.1.1"
+
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.20'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+}

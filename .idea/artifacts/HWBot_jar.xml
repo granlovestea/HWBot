@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="HWBot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HWBot_jar</output-path>
+    <root id="archive" name="HWBot.jar">
+      <element id="module-output" name="HWBot" />
+    </root>
+  </artifact>
+</component>
